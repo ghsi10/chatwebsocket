@@ -44,8 +44,8 @@ function sendName() {
 function showGreeting(message) {
     var table = $("#greetings");
     table.prepend("<tr><td>" + message + "</td></tr>");
-    if (table.rows.length > 20) {
-        table.deleteRow(20)
+    if (table[0].rows.length > 20) {
+        table[0].deleteRow(20)
     }
 }
 
